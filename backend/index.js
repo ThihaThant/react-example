@@ -24,6 +24,10 @@ app.use(express.json());
 // If not req.body is empty
 app.use(express.urlencoded({ extended: false }));
 
+//Connect to front end
+app.use("/", express.static("../frontend-react/build"));
+app.use("/legacy", express.static("../frontend"));
+
 //////////////////////////////////////////////////////
 // POST GET METHODS
 // http://localhost:3000/api/
