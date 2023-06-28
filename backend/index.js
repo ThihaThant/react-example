@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //Connect to front end
-app.use("/", express.static("../frontend-react/build"));
+app.use("/", express.static("../react-app-example/build"));
 app.use("/legacy", express.static("../frontend"));
 
 //////////////////////////////////////////////////////
